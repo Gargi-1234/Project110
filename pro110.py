@@ -23,17 +23,17 @@ while True:
 		frame = cv2.flip(frame , 1)
 		
 		#resize the frame
-    	image = cv2.resize(frame,(224,224))
+    		image = cv2.resize(frame,(224,224))
 		
 		# expand the dimensions
 		test_image = np.array(img,dtype=np.float32)
-    	test_image = np.expand_dims(test_img,axis=0)
+    		test_image = np.expand_dims(test_img,axis=0)
  
 		# normalize it before feeding to the model
-    	normalised_image = test_image/255.0
+    		normalised_image = test_image/255.0
 		
 		# get predictions from the model
-    	prediction = model.predict(normalised_image)
+    		prediction = model.predict(normalised_image)
    		print("Prediction : ",prediction)
 		
 		
