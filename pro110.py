@@ -23,7 +23,7 @@ while True:
 		frame = cv2.flip(frame , 1)
 		
 		#resize the frame
-    		image = cv2.resize(frame,(224,224))
+    		img = cv2.resize(frame,(224,224))
 		
 		# expand the dimensions
 		test_image = np.array(img,dtype=np.float32)
